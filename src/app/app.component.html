@@ -1,9 +1,10 @@
-<body class="bg-secondary">
-  <div class="d-flex justify-content-center vh-100">
-    <div class="d-flex flex-column justify-content-around">
-      <button mat-raised-button class="btn btn-primary">REGISTRO</button>
-      <button mat-raised-button class="btn btn-primary">RESULTADOS</button>
-      <button mat-raised-button class="btn btn-primary">ACERCA DE</button>  
+<body class="bg-secondary ">
+  <div class="d-flex flex-column justify-content-center ">
+    <div class="d-flex  justify-content-around">
+      <button mat-raised-button class="btn btn-primary my-3" routerLink="/registro">REGISTRO</button>
+      <button mat-raised-button class="btn btn-primary my-3" routerLink="/resultados">RESULTADOS</button>
+      <button mat-raised-button class="btn btn-primary my-3" routerLink="/acerca-de">ACERCA DE</button>
     </div>
+    <router-outlet></router-outlet>
   </div>
 </body>
