@@ -8,8 +8,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+
 import { RegistroComponent } from './pages/registro/registro.component';
+
 import { ResultadosComponent } from './pages/resultados/resultados.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+
 import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
 @NgModule({
   declarations: [
@@ -25,7 +29,8 @@ import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
     MatButtonModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

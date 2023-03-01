@@ -1,1 +1,35 @@
-<p>resultados works!</p>
+<h1>Resultados</h1>
+
+<div class="chart-container">
+    
+    <ngx-charts-bar-vertical
+  [view]="[700,400]"
+  [scheme]="colorScheme"
+  [results]="single"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel">
+  </ngx-charts-bar-vertical>
+  <!--ngx-charts-bar-vertical
+    [results]="chartData"
+    [view]="chartOptions.view"
+    [scheme]="chartOptions.colorScheme"
+    [xAxis]="chartOptions.showXAxis"
+    [yAxis]="chartOptions.showYAxis"
+    [gradient]="chartOptions.gradient"
+    [legendTitle]="chartOptions.legendTitle"
+    [showXAxisLabel]="chartOptions.showXAxisLabel"
+    [showYAxisLabel]="chartOptions.showYAxisLabel"
+    [xAxisLabel]="chartOptions.xAxisLabel"
+    [yAxisLabel]="chartOptions.yAxisLabel"
+    [barPadding]="chartOptions.barPadding"
+  >
+  </ngx-charts-bar-vertical-->
+  
+</div>
+
+<button mat-raised-button color="primary" (click)="goBack()">Volver</button>
