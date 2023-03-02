@@ -40,6 +40,7 @@ const people: Person[] = [
 }, {});*/
 
 export class ResultadosComponent implements OnInit {
+  
   //test
   single: any[];
   colorScheme = {
@@ -78,6 +79,7 @@ export class ResultadosComponent implements OnInit {
     }
 
   ngOnInit(): void {
+
     //GET DATA
     this.getChartData();
     //slower

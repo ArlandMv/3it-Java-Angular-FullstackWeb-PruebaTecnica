@@ -1,1 +1,25 @@
-<p>acerca-de works!</p>
+<div class="d-flex flex-column align-items-center justify-content-center" >
+  <mat-card class="card" >
+    <mat-card-header>
+      <mat-card-title>Acerca de {{title}}</mat-card-title>
+      <mat-card-subtitle class="mx-2">
+        Desarrollado por:
+        <a href="https://github.com/ArlandMv" target="_blank">
+          Arland Michelena
+        </a>
+      </mat-card-subtitle>
+    </mat-card-header>
+    
+    <img
+      mat-card-image
+      src={{imagePath}}
+      alt="github profile picture"
+    />
+    <mat-card-content>
+      <p>{{description}}</p>
+    </mat-card-content>
+  </mat-card>
+  <button mat-raised-button color="accent" class="my-4" (click)="goBack()">
+    Volver
+  </button>
+</div>

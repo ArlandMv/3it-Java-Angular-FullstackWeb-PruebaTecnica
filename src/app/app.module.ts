@@ -15,6 +15,8 @@ import { ResultadosComponent } from './pages/resultados/resultados.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
+import { MatCardModule } from '@angular/material/card';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +32,8 @@ import { AcercaDeComponent } from './pages/acerca-de/acerca-de.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxChartsModule
+    NgxChartsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
