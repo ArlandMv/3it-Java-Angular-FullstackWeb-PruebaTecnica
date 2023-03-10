@@ -1,27 +1,107 @@
-# Frontend
+# Angular y Spring Boot STACK-Starter
+Este repositorio contiene el esqueleto de proyecto para un frontend Angular y un backend Spring Boot. Está diseñado para servir como punto de partida para nuevos proyectos que requieran combinación de tecnologías.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+## 1-Requisitos y Variables de Entorno
 
-## Development server
+Asegurese de verificar los requisitos mínimos señalados mediante los comandos y que las variables de entorno esten configuradas adecuadamente. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**Node.js** v14 o superior instalado `node -v`
+    
+    Puede descargarlo desde el sitio web oficial en [NodeJs.Org](https://nodejs.org/en/).
+    
+**Java** 1.8 instalado `java -version`
 
-## Code scaffolding
+    Puede descargar Java 1.8 desde el sitio web oficial en [www.oracle.com](https://www.oracle.com/java/technologies/javase-jre8-downloads.html).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+**Maven** 3.X.X instalado `mvn -version`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    Puede descargar Binario apache-maven-x.x.x-bin.zip desde el sitio web oficial en [maven.apache.org](https://maven.apache.org/download.cgi).
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para que el programa funcione correctamente, debe configurar las siguientes **variables de entorno** de Java y Maven:
 
-## Running end-to-end tests
+`JAVA_HOME`: La ruta de Java. Ej: C:\Program Files\Java\jdk1.8.0_351
+`MAVEN_HOME`: La ruta de Maven. Ej: C:\Program Files\Maven\apache-maven-3.9.0
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+`PATH`: Agregar la ruta de las carpetas `bin` al PATH.
+- %JAVA_HOME%\bin
+- %MAVEN_HOME%\bin 
 
-## Further help
+## 2-Instalación de tecnologias Frontend y Backwend
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 2.1-Frontend: Angular 11 (IDE recomendado: Visual Studio Code)
+
+En una ventana de terminal ejecute las siguientes instruccion para instalar:
+`npm install -g @angular/cli@11`.  
+Alternativamente verifique usando: `ng --version`
+
+### 2.2-Backend: 
+
+Instale el IDE de su preferencia, se sugiere IntelliJ IDEA o alternativamente Spring tool suite .
+
+**Instalación de IntelliJ IDEA.**
+
+1. Descargue [IntelliJ IDEA](https://www.jetbrains.com/idea/download) desde el sitio web oficial de JetBrains.
+2. Seleccione la descarga de acuerdo a su sistema operativo.
+3. Una vez descargado el archivo, haga doble clic en él para iniciar el instalador.
+4. Siga las instrucciones en pantalla para completar la instalación de IntelliJ IDEA.
+5. Después de la instalación, abra IntelliJ IDEA y configure sus preferencias iniciales según sea necesario.
+
+Después de completar estos pasos, debería tener IntelliJ IDEA instalado en su sistema y estar listo para comenzar a desarrollar con Java.
+
+
+**Instalación de Spring Tool Suite** (Alternativamente)
+
+1. Descargue la última versión de [Spring Tool Suite](https://spring.io/tools) desde la página de descarga oficial.
+2. Descomprima el archivo ZIP en la carpeta deseada.
+3. Ejecute Spring Tool Suite y verifique que se haya instalado correctamente.
+
+Después de completar estos pasos, debería tener Spring Tool Suite instalado en su sistema y estar listo para comenzar a desarrollar con Java.
+
+
+## Ejecutar localmente 
+
+
+**Preparar Backend**
+```bash
+    cd backend
+    `mvn spring-boot:run`
+    echo 'correr springboot'
+```
+
+
+**Install my-project with npm**
+
+```bash
+  git clone https://github.com/ArlandMv/angular-springboot-starter
+  cd angular-springboot-starter
+  cd frontend
+  npm install
+  ng serve -o
+```
+    
+## Deployment
+
+To deploy this project run
+
+
+- **Clonar el repositorio:** Clona este repositorio en tu máquina local usando Git.
+
+- **Construir y ejecutar el backend de Spring Boot:** En el directorio `spring-boot-project`, ejecuta el siguiente comando en tu terminal: `mvn spring-boot:run`
+
+- **Construir y ejecutar el frontend de Angular:** En el directorio `angular-project`, ejecuta el siguiente comando en tu terminal: `ng serve`
+
+- **Abrir la aplicación en tu navegador:** Abre tu navegador y navega a `http://localhost:4200` para ver la aplicación Angular en acción.
+
+¡Eso es todo! Ahora deberías tener una aplicación Angular y Spring Boot funcionando.
+
+```bash
+  npm run deploy
+```
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
