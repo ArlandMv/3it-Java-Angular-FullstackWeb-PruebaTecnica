@@ -1,5 +1,5 @@
-# Angular y Spring Boot STACK-Starter
-Este repositorio contiene el esqueleto de proyecto para un frontend Angular y un backend Spring Boot. Está diseñado para servir como punto de partida para nuevos proyectos que requieran combinación de tecnologías.
+# Angular y Spring Boot STACK
+Este repositorio contiene el esqueleto de proyecto para un frontend Angular y un backend Spring Boot. Está diseñado para servir como punto de partida para nuevos proyectos que requieran combinación de tecnologías especificamente acompañadas con bases de datos MySQL.
 
 ## 1-Requisitos y Variables de Entorno
 
@@ -38,7 +38,22 @@ Alternativamente verifique usando: `ng --version`
 
 ### 2.2-Backend: 
 
-Instale el IDE de su preferencia, se sugiere IntelliJ IDEA o alternativamente Spring tool suite .
+Instale el IDE de su preferencia, se sugiere Spring tool suite o alternativamente IntelliJ IDEA, no obstante se requiere crear una base de datos y tabla en MySQL Workbench 8.
+
+**Script for MySQL Workbench 8.**
+
+```sql 
+    CREATE DATABASE my_database;
+    
+    USE my_database;
+
+    CREATE TABLE people (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    area VARCHAR(255) NOT NULL
+    );
+```
 
 **Instalación de IntelliJ IDEA.**
 
@@ -64,12 +79,12 @@ Después de completar estos pasos, debería tener Spring Tool Suite instalado en
 
 
 **Preparar Backend**
-```bash
-    cd backend
+```bash 
+    cd [carpeta de backend]
     `mvn spring-boot:run`
     echo 'correr springboot'
 ```
-
+verificar api en explorador: `http://localhost:8080/api/v1/`
 
 **Install my-project with npm**
 
